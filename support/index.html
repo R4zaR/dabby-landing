@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B50S4ZL81D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-B50S4ZL81D');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — Dabby</title>
+  <meta name="description" content="Get support for Dabby — the dab nail timer app." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0f0f0f;
+      --surface:   #1a1a1a;
+      --surface-2: #222222;
+      --border:    rgba(255,255,255,0.08);
+      --text:      #f0f0f0;
+      --text-muted:#9a9a9a;
+      --green:     #22c55e;
+      --green-dark:#15803d;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(15,15,15,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 60px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 18px; font-weight: 800;
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-decoration: none;
+    }
+    .nav-logo img { height: 36px; border-radius: 8px; }
+
+    /* MAIN */
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 24px;
+    }
+
+    .support-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 48px 40px;
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .support-icon {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .support-card h1 {
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .support-card p {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      line-height: 1.7;
+    }
+
+    .support-email {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(34,197,94,0.08);
+      border: 1px solid rgba(34,197,94,0.25);
+      border-radius: 12px;
+      padding: 14px 24px;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--green);
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .support-email:hover {
+      background: rgba(34,197,94,0.14);
+      transform: translateY(-2px);
+    }
+
+    .support-note {
+      margin-top: 24px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px;
+      text-align: center;
+    }
+    footer p { font-size: 13px; color: var(--text-muted); }
+    footer a { color: var(--green); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <img src="../Dabby_Logo_nobg.png" alt="Dabby" />
+      Dabby — Dab Timer &amp; Temp Guide App
+    </a>
+  </nav>
+
+  <main>
+    <div class="support-card">
+      <div class="support-icon">🛟</div>
+      <h1>Support</h1>
+      <p>Have a question, found a bug, or just want to share feedback? We'd love to hear from you. Reach out and we'll get back to you as soon as possible.</p>
+      <a class="support-email" href="mailto:razapps.support@gmail.com">
+        ✉️ razapps.support@gmail.com
+      </a>
+      <p class="support-note">Typically respond within 24–48 hours.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Dabby. All rights reserved. &nbsp;·&nbsp;
+      <a href="/">Home</a> &nbsp;·&nbsp;
+      <a href="https://r4zar.github.io/dabby-privacy/" target="_blank">Privacy Policy</a>
+    </p>
+  </footer>
+
+</body>
+</html>
