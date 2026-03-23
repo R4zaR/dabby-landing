@@ -101,9 +101,49 @@
       color: rgba(255,255,255,0.3);
       text-align: center;
     }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(15,15,15,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 0 24px;
+      height: 60px;
+      display: flex; align-items: center; justify-content: space-between;
+      margin: -40px -20px 40px;
+    }
+
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 18px; font-weight: 800;
+      background: linear-gradient(135deg, #15803d, #22c55e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-decoration: none;
+    }
+
+    .nav-logo img { height: 36px; border-radius: 8px; }
+
+    .back-link {
+      font-size: 14px;
+      color: #22c55e;
+      text-decoration: none;
+      display: flex; align-items: center; gap: 6px;
+    }
+
+    .back-link:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
+  <nav>
+    <a class="nav-logo" href="https://getdabby.app">
+      <img src="../Dabby_Logo_nobg.png" alt="Dabby" />
+      Dabby
+    </a>
+    <a class="back-link" href="https://getdabby.app">← Home</a>
+  </nav>
+
   <div class="container">
 
     <div class="logo">Dabby</div>
